@@ -1,89 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Squirrel Informatics</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
-    <link rel="icon" href="assets/images/logo.png" type="image/png">
-    </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Red Squirrel Informatics - Agile Intelligence for Your Data" />
+  <title>Red Squirrel Informatics</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+</head>
+
 <body>
-    <div class="container">
-        <main>
-            <header>
-                <div class="header-content">
-                  <img src="assets/images/banner.jpg" alt="Red Squirrel Informatics Banner" class="banner">
-                    <h1 class="name">Red Squirrel Informatics</h1>
-                    <p class="tagline">Agile Intelligence for Your Data</p>
-                </div>
-            </header>
+  <header class="site-header">
+    <img src="assets/images/banner.jpeg" alt="Red Squirrel Informatics Banner" class="banner" />
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <section id="about" class="section">
-                <div class="section-content">
-                    <h2 class="section-title">About Me</h2>
-                    <p>
-                        I'm a freelance ML engineer with 4+ years of experience, passionate about crafting intelligent solutions. My expertise includes [Specify key skills: e.g., NLP, computer vision, time series analysis, MLOps]. I'm dedicated to helping businesses like yours harness the power of machine learning to drive growth and efficiency.
-                    </p>
-                    <p>
-                        I believe in a collaborative, agile approach, ensuring that the solutions I deliver are not only cutting-edge but also perfectly aligned with your specific needs and goals.
-                    </p>
-                </div>
-            </section>
-
-            <section id="services" class="section">
-                <div class="section-content">
-                    <h2 class="section-title">Services</h2>
-                    <div class="services-grid">
-                        <div class="service-card">
-                            <i class="ph-duotone ph-brain"></i>
-                            <h3>ML Model Development</h3>
-                            <p>Custom model creation for your unique business challenges.</p>
-                        </div>
-                        <div class="service-card">
-                            <i class="ph-duotone ph-rocket"></i>
-                            <h3>MLOps & Deployment</h3>
-                            <p>Streamlined deployment and management of ML systems.</p>
-                        </div>
-                        <div class="service-card">
-                            <i class="ph-duotone ph-database"></i>
-                            <h3>Data Engineering</h3>
-                            <p>Data Pipelines, cleaning, and feature engineering.</p>
-                        </div>
-                        <div class="service-card">
-                            <i class="ph-duotone ph-magnifying-glass"></i>
-                            <h3>Consulting</h3>
-                            <p>Expert advice on ML strategy and implementation.</p>
-                        </div>
-                        <div class="service-card">
-                            <i class="ph-duotone ph-code"></i>
-                            <h3>Custom Solutions</h3>
-                            <p>Bespoke end to end ML applications.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact" class="section">
-                <div class="section-content">
-                    <h2 class="section-title">Contact Me</h2>
-                    <p>
-                        I'm eager to discuss how I can help you achieve your goals with machine learning. Feel free to reach out for a consultation.
-                    </p>
-                    <div class="contact-methods">
-                        <a href="mailto:contact@redsqinf.com" class="contact-link">
-                            <i class="ph-duotone ph-envelope"></i> Email: contact@redsqinf.com
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2025 Red Squirrel Informatics. All rights reserved.</p>
-        </footer>
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Red Squirrel Informatics</h1>
+      <p>Agile Intelligence for Your Data</p>
+      <a href="#contact" class="btn-primary">Work With Me</a>
     </div>
-    <script src="script.js"></script>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I provide freelance Machine Learning Engineering solutions tailored to your data needs — from ML design and deployment to MLOps, data architecture, and automation pipelines.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Machine Learning Engineering</h3>
+        <p>Custom model development, feature pipelines, and scalable training pipelines using Python, PySpark, and Databricks.</p>
+      </div>
+      <div class="card">
+        <h3>MLOps & CI/CD</h3>
+        <p>Automated model versioning, registry, deployment workflows with Terraform, Azure, AWS, and GitHub Actions.</p>
+      </div>
+      <div class="card">
+        <h3>Data Platform Design</h3>
+        <p>End-to-end data solutions leveraging modern cloud data warehouses, orchestration tools, and DevOps practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Recent and past work samples available on request or via GitHub. Check back soon for updates.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Red Squirrel Informatics. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>
