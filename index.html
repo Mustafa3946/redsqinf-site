@@ -2,45 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Red Squirrel Informatics</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --accent: #b22222; /* deep red */
+      --font: 'Helvetica Neue', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    ul {
+      list-style: disc inside;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Red Squirrel Informatics</h1>
-    <p>Machine Learning Solutions with Simplicity & Impact</p>
+    <p>Freelance Machine Learning Engineering • Custom AI Solutions • Clean, Scalable Code</p>
   </header>
 
-  <section id="about">
+  <section>
     <h2>About</h2>
-    <p>
-      I'm a freelance Machine Learning Engineer focused on creating data-driven solutions with care and clarity. I bring hands-on experience across industries, with strong foundations in ML, MLOps, and data engineering.
-    </p>
+    <p>Hi, I’m a freelance Machine Learning Engineer offering custom end-to-end ML solutions — from prototyping to production. I specialize in Python, PySpark, Databricks, cloud platforms, and MLOps.</p>
   </section>
 
-  <section id="services">
+  <section>
     <h2>Services</h2>
     <ul>
-      <li>Custom Machine Learning Models</li>
-      <li>End-to-End ML Pipelines (Python, PySpark, Databricks)</li>
-      <li>Model Deployment & Monitoring</li>
-      <li>ML System Design & MLOps (Terraform, CI/CD)</li>
+      <li>ML model development and deployment</li>
+      <li>Data pipeline engineering (ETL/ELT)</li>
+      <li>Cloud-based ML workflows (AWS, Azure)</li>
+      <li>MLOps & CI/CD automation</li>
+      <li>Model monitoring and versioning</li>
     </ul>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Explore my <a href="https://github.com/mustafa3946" target="_blank">GitHub portfolio</a>.</p>
-  </section>
-
-  <section id="contact">
+  <section>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:contact@redsqinf.com">contact@redsqinf.com</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Red Squirrel Informatics</p>
+    &copy; 2025 Red Squirrel Informatics. All rights reserved.
   </footer>
+
 </body>
 </html>
