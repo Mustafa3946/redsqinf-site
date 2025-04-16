@@ -1,49 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Red Squirrel Informatics offers cutting-edge machine learning solutions." />
-    <meta property="og:image" content="assets/images/logo.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Squirrel Informatics</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <div class="content">
-          <h1>Red Squirrel Informatics</h1>
-          <p>Agile Intelligence for Your Data</p>
-          <a href="#contact" class="button">Get in Touch</a>
-        </div>
-      </div>
-    </section>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    </head>
+<body>
+    <div class="container">
+        <main>
+            <header>
+                <div class="header-content">
+                    <img src="logo.png" alt="Red Squirrel Informatics Logo" class="logo">
+                    <h1 class="name">Red Squirrel Informatics</h1>
+                    <p class="tagline">Agile Intelligence for Your Data</p>
+                </div>
+            </header>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>We provide innovative machine learning solutions to help you unlock the value of your data and make smarter decisions.</p>
-      </div>
-    </section>
+            <section id="about" class="section">
+                <div class="section-content">
+                    <h2 class="section-title">About Me</h2>
+                    <p>
+                        I'm a freelance ML engineer with 4+ years of experience, passionate about crafting intelligent solutions. My expertise includes [Specify key skills: e.g., NLP, computer vision, time series analysis, MLOps]. I'm dedicated to helping businesses like yours harness the power of machine learning to drive growth and efficiency.
+                    </p>
+                    <p>
+                        I believe in a collaborative, agile approach, ensuring that the solutions I deliver are not only cutting-edge but also perfectly aligned with your specific needs and goals.
+                    </p>
+                </div>
+            </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p>Feel free to reach out to discuss how we can work together on your next project.</p>
-        <a href="mailto:contact@redsquirrelinformatics.com" class="button">Email Us</a>
-      </div>
-    </section>
+            <section id="services" class="section">
+                <div class="section-content">
+                    <h2 class="section-title">Services</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <i class="ph-duotone ph-brain"></i>
+                            <h3>ML Model Development</h3>
+                            <p>Custom model creation for your unique business challenges.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="ph-duotone ph-rocket"></i>
+                            <h3>MLOps & Deployment</h3>
+                            <p>Streamlined deployment and management of ML systems.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="ph-duotone ph-database"></i>
+                            <h3>Data Engineering</h3>
+                            <p>Data Pipelines, cleaning, and feature engineering.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="ph-duotone ph-magnifying-glass"></i>
+                            <h3>Consulting</h3>
+                            <p>Expert advice on ML strategy and implementation.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="ph-duotone ph-code"></i>
+                            <h3>Custom Solutions</h3>
+                            <p>Bespoke end to end ML applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 Red Squirrel Informatics. All rights reserved.</p>
-      </div>
-    </footer>
+            <section id="portfolio" class="section">
+                <div class="section-content">
+                    <h2 class="section-title">Portfolio</h2>
+                    <div class="portfolio-grid">
+                        <div class="project-card">
+                            <img src="project1.jpg" alt="Project 1" loading="lazy">
+                            <h3>[Project Title 1]</h3>
+                            <p>[Brief description of project 1.  Emphasize the impact and technologies used.]</p>
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                        <div class="project-card">
+                            <img src="project2.jpg" alt="Project 2" loading="lazy">
+                            <h3>[Project Title 2]</h3>
+                            <p>[Brief description of project 2.  Emphasize the impact and technologies used.]</p>
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <p style="text-align: center; font-size: 0.9em; color: #777;">
+                        Note: Some portfolio items may be under NDA. Please contact me for more information.
+                    </p>
+                </div>
+            </section>
 
+            <section id="testimonials" class="section">
+                <div class="section-content">
+                    <h2 class="section-title">Testimonials</h2>
+                    <div id="testimonial-container">
+                        <div class="testimonial-card">
+                            <p>"[Client Name/Company] was instrumental in..."</p>
+                            <p class="testimonial-author">- [Client Name], [Client Title]</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <p>"[Client Name/Company]'s expertise in ML helped us to achieve..."</p>
+                            <p class="testimonial-author">- [Client Name], [Client Title]</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-buttons">
+                        <button id="prev-testimonial" class="testimonial-button">❮</button>
+                        <button id="next-testimonial" class="testimonial-button">❯</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="section-content">
+                    <h2 class="section-title">Contact Me</h2>
+                    <p>
+                        I'm eager to discuss how I can help you achieve your goals with machine learning. Feel free to reach out for a consultation.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:your.email@example.com" class="contact-link">
+                            <i class="ph-duotone ph-envelope"></i> Email: your.email@example.com
+                        </a>
+                        <a href="https://www.linkedin.com/yourprofile" target="_blank" rel="noopener noreferrer"
+                           class="contact-link">
+                            <i class="ph-duotone ph-linkedin-logo"></i> LinkedIn: yourprofile
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Red Squirrel Informatics. All rights reserved.</p>
+        </footer>
+    </div>
     <script src="js/script.js"></script>
-  </body>
+</body>
 </html>
