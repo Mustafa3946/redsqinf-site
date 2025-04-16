@@ -23,7 +23,7 @@
     </nav>
   </header>
 
-  <section id="hero">
+  <section id="hero" class="animate">
     <div class="hero-content">
       <h1>Red Squirrel Informatics</h1>
       <p>Agile Intelligence for Your Data</p>
@@ -31,12 +31,12 @@
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="animate">
     <h2>About</h2>
     <p>I provide freelance Machine Learning Engineering solutions tailored to your data needs — from ML design and deployment to MLOps, data architecture, and automation pipelines.</p>
   </section>
 
-  <section id="services">
+  <section id="services" class="animate">
     <h2>Services</h2>
     <div class="card-grid">
       <div class="card">
@@ -54,22 +54,24 @@
     </div>
   </section>
 
-  <section id="portfolio">
+  <section id="portfolio" class="animate">
     <h2>Portfolio</h2>
     <p>Recent and past work samples available on request or via GitHub. Check back soon for updates.</p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="animate">
     <h2>Contact</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
+    <form id="contactForm">
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
+      <p id="form-status"></p>
     </form>
   </section>
 
   <footer class="site-footer">
     <p>&copy; 2025 Red Squirrel Informatics. All rights reserved.</p>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
   </footer>
 
   <script src="js/script.js"></script>
