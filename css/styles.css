@@ -27,27 +27,23 @@ h1, h2, h3 {
 header {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 60vh; /* Adjust height as needed */
+  background-color: #333; /* Fallback color if no image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-container {
-  position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-}
-
-.banner {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   color: white;
 }
@@ -55,6 +51,7 @@ header {
 .tagline {
   font-size: 2.5rem;
   font-weight: 600;
+  margin-top: 10px;
 }
 
 /* Section Styling */
