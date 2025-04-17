@@ -1,7 +1,7 @@
 body {
   font-family: 'Neue Montreal', 'Inter', sans-serif;
   margin: 0;
-  background-color: #f0f4f8; /* Light background, might adjust */
+  background-color: #f0f4f8;
   color: #333;
   line-height: 1.7;
   display: flex;
@@ -18,7 +18,7 @@ body.dark-mode {
 }
 
 .container {
-  background-color: #fff; /* White container */
+  background-color: #fefefe;
   padding: 60px;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -91,7 +91,7 @@ header .header-content {
   font-size: 4.5em;
   font-weight: 700;
   margin-bottom: 25px;
-  color: #fff; /* White text for contrast on banner overlay */
+  color: #fff;
   letter-spacing: -0.02em;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   transition: font-size 0.3s ease;
@@ -103,7 +103,7 @@ header .header-content {
 }
 
 .tagline {
-  color: #eee; /* Light text for tagline */
+  color: #eee;
   font-style: italic;
   font-size: 1.5em;
   margin-bottom: 0;
@@ -119,16 +119,18 @@ main {
   margin-bottom: 80px;
   padding: 60px;
   border-radius: 12px;
-  background-color: #f5f5f5; /* Slightly off-white for sections */
+  background-color: #f5f5f5;
   transition: background-color 0.5s ease, box-shadow 0.3s ease;
+  border: 1px solid #ededed;
 }
 
 .section.dark-mode {
   background-color: #1f1f1f;
+  border-color: #333;
 }
 
 .section:hover {
-  background-color: #e8e8e8; /* Lighter hover effect */
+  background-color: #f1f1f1;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
@@ -142,8 +144,8 @@ main {
   font-size: 3em;
   font-weight: 600;
   margin-bottom: 50px;
-  color: #2c3e50; /* Dark heading color */
-  border-bottom: 3px solid #e44d26; /* Keeping the orange accent */
+  color: #2c3e50;
+  border-bottom: 3px solid #e44d26;
   padding-bottom: 25px;
   text-align: center;
   letter-spacing: -0.02em;
@@ -181,7 +183,7 @@ main {
 .about-paragraph {
   margin-bottom: 30px;
   line-height: 1.8;
-  color: #555; /* Darker body text */
+  color: #555;
   font-size: 1.2em;
   transition: color 0.5s ease;
 }
@@ -194,7 +196,7 @@ main {
 .about-list {
 list-style-position: inside;
 margin-bottom: 30px;
-color: #555; /* Darker list text */
+color: #555;
 font-size: 1.2em;
 }
 
@@ -229,7 +231,7 @@ font-size: 1.2em;
 }
 
 .service-card {
-  background-color: #fff; /* White service cards */
+  background-color: #fff;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
@@ -239,11 +241,13 @@ font-size: 1.2em;
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
+  border: 1px solid #ededed;
 }
 
 .service-card.dark-mode {
   background-color: #1f1f1f;
   color: #eee;
+  border-color: #333;
 }
 
 .service-card:hover {
@@ -260,7 +264,7 @@ font-size: 1.2em;
 .service-card i {
   font-size: 3em;
   margin-bottom: 25px;
-  color: #e44d26; /* Orange accent for icons */
+  color: #e44d26;
   transition: color 0.3s ease;
 }
 
@@ -281,7 +285,7 @@ font-size: 1.2em;
 .service-card h3 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #2c3e50; /* Dark heading in service cards */
+  color: #2c3e50;
   font-weight: 600;
   letter-spacing: -0.02em;
   transition: color 0.5s ease;
@@ -296,12 +300,12 @@ font-size: 1.2em;
 }
 
 .service-card.dark-mode h3:hover {
-   color: #b388ff;
+  color: #b388ff;
 }
 
 .service-card p {
   margin-bottom: 0;
-  color: #555; /* Darker text in service cards */
+  color: #555;
   font-size: 1.2em;
   line-height: 1.7;
   transition: color 0.5s ease;
@@ -330,7 +334,7 @@ font-size: 1.2em;
 #contact p{
   font-size: 1.2em;
   margin-bottom: 30px;
-  color: #555; /* Darker contact text */
+  color: #555;
   transition: color 0.5s ease;
 }
 
@@ -351,7 +355,7 @@ font-size: 1.2em;
   display: inline-flex;
   align-items: center;
   gap: 15px;
-  color: #e44d26; /* Orange for contact link */
+  color: #e44d26;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s ease, transform 0.2s ease;
@@ -382,7 +386,7 @@ font-size: 1.2em;
 
 .social-links a {
   font-size: 2.2em;
-  color: #555; /* Dark social icons */
+  color: #555;
   transition: color 0.3s ease;
 }
 
@@ -391,7 +395,7 @@ font-size: 1.2em;
 }
 
 .social-links a:hover {
-  color: #e44d26; /* Orange hover for social icons */
+  color: #e44d26;
   transform: scale(1.2);
 }
 
@@ -404,7 +408,7 @@ footer {
   margin-top: 80px;
   padding-top: 30px;
   border-top: 1px solid #ddd;
-  color: #777; /* Darker footer text */
+  color: #777;
   font-size: 1em;
   text-align: center;
   transition: color 0.5s ease, border-color 0.5s ease;
@@ -476,7 +480,7 @@ footer.dark-mode {
       gap: 15px;
   }
 
-      .about-grid {
+  .about-grid {
       grid-template-columns: 1fr;
   }
 }
