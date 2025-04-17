@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
     <link rel="icon" href="assets/images/favicon.png" type="image/png">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -25,7 +25,7 @@
                 </div>
             </header>
 
-            <section id="about" class="section" data-aos="fade-up" data-aos-duration="800">
+            <section id="about" class="section">
                 <div class="section-content">
                     <h2 class="section-title">About Me</h2>
                     <div class="about-grid">
@@ -47,15 +47,14 @@
 
                             </ul>
                             <p>
-                                I am passionate about applying machine learning to solve complex problems and drive meaningful outcomes for businesses.  My approach is collaborative and results-oriented, focusing on delivering solutions that are both innovative and practical.
+                                I am passionate about applying machine learning to solve complex problems and drive meaningful outcomes for businesses. My approach is collaborative and results-oriented, focusing on delivering solutions that are both innovative and practical.
                             </p>
-
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="services" class="section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <section id="services" class="section">
                 <div class="section-content">
                     <h2 class="section-title">Services</h2>
                     <div class="services-grid">
@@ -83,13 +82,19 @@
                 </div>
             </section>
 
-            <section id="contact" class="section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <section id="contact" class="section">
                 <div class="section-content">
                     <h2 class="section-title">Contact Me</h2>
                     <div class="contact-methods">
                          <a href="mailto:contact@redsqinf.com" class="contact-link">
                             <i class="ph-duotone ph-envelope"></i> Email: contact@redsqinf.com
                         </a>
+                         <p>
+                            I am available for freelance projects and consulting engagements.  Feel free to reach out to me via email.
+                        </p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Mustafa3946" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </section>
@@ -99,9 +104,15 @@
             <p>&copy; 2025 Red Squirrel Informatics. All rights reserved.</p>
         </footer>
     </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+    document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.classList.add('card-hovered');
+        });
+        card.addEventListener('mouseleave', () => {
+            card.classList.remove('card-hovered');
+        });
+    });
     </script>
 </body>
 </html>
