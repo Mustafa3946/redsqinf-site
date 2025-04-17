@@ -94,7 +94,7 @@
                         </p>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/Mustafa3946" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/your-github-profile" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </section>
@@ -113,6 +113,17 @@
             card.classList.remove('card-hovered');
         });
     });
+
+    function updateTheme() {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
+        }
+    }
+
+    updateTheme();
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme);
     </script>
 </body>
 </html>
