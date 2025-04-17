@@ -1,5 +1,5 @@
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Neue Montreal', 'Inter', sans-serif;
   margin: 0;
   background-color: #f0f4f8;
   color: #333;
@@ -88,25 +88,27 @@ header .header-content {
 
 
 .name {
-  font-size: 3.5em;
+  font-size: 4.5em;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   color: #fff;
   letter-spacing: -0.02em;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   transition: font-size 0.3s ease;
+  text-align: center; /* Center the name */
 }
 
 .name:hover{
-  font-size: 3.7em;
+  font-size: 4.7em;
 }
 
 .tagline {
   color: #eee;
   font-style: italic;
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 0;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  text-align: center; /* Center the tagline */
 }
 
 main {
@@ -137,12 +139,12 @@ main {
 
 
 .section-title {
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   color: #2c3e50;
   border-bottom: 3px solid #e44d26;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   text-align: center;
   letter-spacing: -0.02em;
   transition: border-bottom-color 0.3s ease;
@@ -176,27 +178,27 @@ main {
   text-align: left;
 }
 
-.about-text p {
-  margin-bottom: 25px;
+.about-paragraph {
+  margin-bottom: 30px;
   line-height: 1.8;
   color: #444;
-  font-size: 1.1em;
+  font-size: 1.2em;
   transition: color 0.5s ease;
 }
 
-.about-text.dark-mode p {
+.about-text.dark-mode .about-paragraph {
   color: #ddd;
 }
 
 
-.about-text ul {
+.about-list {
 list-style-position: inside;
-margin-bottom: 25px;
+margin-bottom: 30px;
 color: #444;
-font-size: 1.1em;
+font-size: 1.2em;
 }
 
-.about-text.dark-mode ul {
+.about-text.dark-mode .about-list {
   color: #ddd;
 }
 
@@ -276,8 +278,8 @@ font-size: 1.1em;
 
 
 .service-card h3 {
-  font-size: 1.8em;
-  margin-bottom: 15px;
+  font-size: 2em;
+  margin-bottom: 20px;
   color: #2c3e50;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -299,7 +301,7 @@ font-size: 1.1em;
 .service-card p {
   margin-bottom: 0;
   color: #555;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.7;
   transition: color 0.5s ease;
 }
@@ -325,7 +327,7 @@ font-size: 1.1em;
 }
 
 #contact p{
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: 30px;
   color: #444;
   transition: color 0.5s ease;
@@ -352,7 +354,7 @@ font-size: 1.1em;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s ease, transform 0.2s ease;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .contact-link.dark-mode {
@@ -378,7 +380,7 @@ font-size: 1.1em;
 }
 
 .social-links a {
-  font-size: 2em;
+  font-size: 2.2em;
   color: #555;
   transition: color 0.3s ease;
 }
@@ -402,7 +404,7 @@ footer {
   padding-top: 30px;
   border-top: 1px solid #ddd;
   color: #777;
-  font-size: 0.9em;
+  font-size: 1em;
   text-align: center;
   transition: color 0.5s ease, border-color 0.5s ease;
 }
@@ -425,7 +427,7 @@ footer.dark-mode {
   }
 
   header h1 {
-      font-size: 3em;
+      font-size: 4em;
   }
 
   .section {
@@ -434,7 +436,7 @@ footer.dark-mode {
   }
 
   .section-title {
-      font-size: 2.2em;
+      font-size: 2.7em;
   }
 
   #services .services-grid {
@@ -461,11 +463,11 @@ footer.dark-mode {
 
 @media (max-width: 768px) {
   header h1 {
-      font-size: 2.5em;
+      font-size: 3.5em;
   }
 
   .section-title {
-      font-size: 2em;
+      font-size: 2.3em;
   }
 
   .contact-methods {
@@ -485,30 +487,30 @@ footer.dark-mode {
   }
 
   header h1 {
-      font-size: 2em;
+      font-size: 3em;
   }
 
   .section-title {
-      font-size: 1.7em;
+      font-size: 2em;
   }
 
   .about-text p {
-      font-size: 1em;
-  }
-
-  .service-card h3 {
-      font-size: 1.5em;
-  }
-
-  .service-card p{
-      font-size: 1em;
-  }
-
-  .contact-link{
       font-size: 1.1em;
   }
 
-  .social-links a {
+  .service-card h3 {
       font-size: 1.7em;
+  }
+
+  .service-card p{
+      font-size: 1.1em;
+  }
+
+  .contact-link{
+      font-size: 1.2em;
+  }
+
+  .social-links a {
+      font-size: 1.9em;
   }
 }
