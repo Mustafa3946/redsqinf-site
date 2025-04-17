@@ -176,7 +176,7 @@ main {
   text-align: left;
 }
 
-.about-text p {
+.about-paragraph {
   margin-bottom: 25px;
   line-height: 1.8;
   color: #444;
@@ -184,19 +184,19 @@ main {
   transition: color 0.5s ease;
 }
 
-.about-text.dark-mode p {
+.about-text.dark-mode .about-paragraph {
   color: #ddd;
 }
 
 
-.about-text ul {
+.about-list {
 list-style-position: inside;
 margin-bottom: 25px;
 color: #444;
 font-size: 1.1em;
 }
 
-.about-text.dark-mode ul {
+.about-text.dark-mode .about-list {
   color: #ddd;
 }
 
