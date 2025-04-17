@@ -8,19 +8,24 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
     <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <main>
             <header>
                 <div class="header-content">
-                    <img src="assets/images/banner.jpg" alt="Red Squirrel Informatics Banner" class="banner">
-                    <h1 class="name">Red Squirrel Informatics</h1>
-                    <p class="tagline">Agile Intelligence for Your Data</p>
+                    <div class="banner-container">
+                        <img src="assets/images/banner.jpg" alt="Machine Learning Concept" class="banner">
+                        <div class="banner-overlay">
+                            <h1 class="name">Red Squirrel Informatics</h1>
+                            <p class="tagline">Agile Intelligence for Your Data</p>
+                        </div>
+                    </div>
                 </div>
             </header>
 
-            <section id="about" class="section">
+            <section id="about" class="section" data-aos="fade-up" data-aos-duration="800">
                 <div class="section-content">
                     <h2 class="section-title">About Me</h2>
                     <div class="about-grid">
@@ -37,20 +42,20 @@
                                 <li>Developing and deploying scalable ML pipelines on cloud platforms (AWS and Azure).</li>
                                 <li>Building MLOps pipelines, developing predictive models, and integrating intelligent services.</li>
                                  <li>Cloud infrastructure automation using Terraform, AWS CDK and Bicep.</li>
-                                <li>ML Tools & Frameworks: MLflow, AWS SageMaker, AzureML, AutoML</li>
+                                <li>ML Tools & Frameworks: MLflow, AWS SageMaker, AzureML, Databricks, AutoML</li>
                                 <li>Languages: Python, SQL, C++, C#, Spark</li>
 
                             </ul>
+                            <p>
+                                I am passionate about applying machine learning to solve complex problems and drive meaningful outcomes for businesses.  My approach is collaborative and results-oriented, focusing on delivering solutions that are both innovative and practical.
+                            </p>
 
-                        </div>
-                        <div class="about-image">
-                            <img src="about-placeholder.jpg" alt="About Me" loading="lazy">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="services" class="section">
+            <section id="services" class="section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <div class="section-content">
                     <h2 class="section-title">Services</h2>
                     <div class="services-grid">
@@ -78,7 +83,7 @@
                 </div>
             </section>
 
-            <section id="contact" class="section">
+            <section id="contact" class="section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                 <div class="section-content">
                     <h2 class="section-title">Contact Me</h2>
                     <div class="contact-methods">
@@ -94,6 +99,9 @@
             <p>&copy; 2025 Red Squirrel Informatics. All rights reserved.</p>
         </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

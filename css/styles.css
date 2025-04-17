@@ -19,6 +19,11 @@ body {
   width: 100%;
   max-width: 1100px;
   box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 header {
@@ -32,27 +37,60 @@ header .header-content {
   align-items: center;
 }
 
+.banner-container {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
 .banner {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 25px;
+  transition: transform 0.5s ease-in-out;
 }
+
+.banner:hover {
+  transform: scale(1.05);
+}
+
+.banner-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+}
+
 
 .name {
   font-size: 3.5em;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #2c3e50;
+  color: #fff;
   letter-spacing: -0.02em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  transition: font-size 0.3s ease;
+}
+
+.name:hover{
+  font-size: 3.7em;
 }
 
 .tagline {
-  color: #667885;
+  color: #eee;
   font-style: italic;
   font-size: 1.2em;
   margin-bottom: 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 main {
@@ -81,6 +119,11 @@ main {
   padding-bottom: 20px;
   text-align: center;
   letter-spacing: -0.02em;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.section-title:hover {
+  border-bottom-color: #c83e1e;
 }
 
 #about .section-content {
@@ -116,12 +159,18 @@ font-size: 1.1em;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .about-image img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 10px;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
 }
 
 
@@ -137,7 +186,7 @@ font-size: 1.1em;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -154,11 +203,12 @@ font-size: 1.1em;
   font-size: 3em;
   margin-bottom: 25px;
   color: #e44d26;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .service-card:hover i {
   color: #c83e1e;
+  transform: scale(1.1);
 }
 
 .service-card h3 {
@@ -167,6 +217,11 @@ font-size: 1.1em;
   color: #2c3e50;
   font-weight: 600;
   letter-spacing: -0.02em;
+  transition: color 0.3s ease;
+}
+
+.service-card h3:hover {
+  color: #e44d26;
 }
 
 .service-card p {
