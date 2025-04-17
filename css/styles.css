@@ -88,25 +88,27 @@ header .header-content {
 
 
 .name {
-  font-size: 4em;
+  font-size: 4.5em;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #fff;
   letter-spacing: -0.02em;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   transition: font-size 0.3s ease;
+  text-align: center; /* Center the name */
 }
 
 .name:hover{
-  font-size: 4.2em;
+  font-size: 4.7em;
 }
 
 .tagline {
   color: #eee;
   font-style: italic;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-bottom: 0;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  text-align: center; /* Center the tagline */
 }
 
 main {
@@ -425,7 +427,7 @@ footer.dark-mode {
   }
 
   header h1 {
-      font-size: 3.5em;
+      font-size: 4em;
   }
 
   .section {
@@ -461,7 +463,7 @@ footer.dark-mode {
 
 @media (max-width: 768px) {
   header h1 {
-      font-size: 3em;
+      font-size: 3.5em;
   }
 
   .section-title {
@@ -485,7 +487,7 @@ footer.dark-mode {
   }
 
   header h1 {
-      font-size: 2.5em;
+      font-size: 3em;
   }
 
   .section-title {
